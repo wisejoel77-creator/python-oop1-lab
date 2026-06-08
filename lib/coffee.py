@@ -10,7 +10,10 @@ class Coffee:
 
     @size.setter
     def size(self, value):
-        value = value.lower()
+        if not isinstance(value, str):
+            raise ValueError("Size must be 'small', 'medium', or 'large'")
+
+        value = value.strip().lower()
 
         if value not in ['small', 'medium', 'large']:
             raise ValueError("Size must be 'small', 'medium', or 'large'")
@@ -33,3 +36,26 @@ class Coffee:
     def tip(self):
         print("This coffee is great, here’s a tip!")
         self._price += 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+    
+    
+    
