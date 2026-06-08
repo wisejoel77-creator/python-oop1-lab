@@ -28,7 +28,4 @@ class Coffee:
         print("This coffee is great! Here is a tip!")
         self.price += 1
 
-size = input("Enter coffee size (Small, Medium, Large): ")
-price = float(input("Enter coffee price: "))
 
-coffee = Coffee(size, price)
