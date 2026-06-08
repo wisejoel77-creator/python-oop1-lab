@@ -30,6 +30,36 @@ class Book:
 
     def turn_page(self):
         return "Flipping the page... wow, you read fast!"
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+ 
+
+ 
+ 
 
 
 
