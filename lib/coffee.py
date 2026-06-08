@@ -13,7 +13,7 @@ class Coffee:
         if not isinstance(value, str):
             raise ValueError("Size must be 'small', 'medium', or 'large'")
 
-        value = value.strip().lower()
+        value = value.strip().title()
 
         if value not in ['small', 'medium', 'large']:
             raise ValueError("Size must be 'small', 'medium', or 'large'")

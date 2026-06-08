@@ -19,9 +19,14 @@ class Book:
 
     @page_count.setter
     def page_count(self, value):
+        try:
+            value = int(value)
+        except ValueError:
+            raise ValueError("Page count must be an integer")
+   
+   
         if value <= 0:
-            raise ValueError("Page_count must be an integer")
-        self._page_count = int(value)
+            raise ValueError("Page count must be an integer")
 
     def turn_page(self):
         return "Flipping the page... wow, you read fast!"
