@@ -15,8 +15,8 @@ class Coffee:
 
         value = value.strip().lower()
 
-        if value not in ['Small', 'Medium', 'Large']:
-            raise ValueError("Size must be 'Small', 'Medium', or 'Large'")
+        if value not in ['small', 'medium', 'large']:
+            raise ValueError("Size must be 'small', 'medium', or 'large'")
 
         self._size = value
 
